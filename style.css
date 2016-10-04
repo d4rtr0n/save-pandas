@@ -1,4 +1,5 @@
 
+
 #left {
     width: 68%;
     float: left;
@@ -103,3 +104,15 @@ div.cta h1 {
    transform: translate(0, -50%); 
    padding-right: 15px; 
 }
+
+.text {
+  -webkit-column-count: 2;
+  -moz-column-count: 2; 
+  column-count: 2;
+ }
+
+ .disclaimer {
+ 	font-style: italic;
+ 	color: #bbaaee;
+ }
+
