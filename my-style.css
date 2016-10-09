@@ -1,13 +1,14 @@
-
-
 #left {
     width: 68%;
     float: left;
+    padding: 50px 50px 0 20px;
 }
 
 #right {
-    margin-left: 70%;
-    background-color: #000;
+  margin-left: 70%;
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px 0 20px;
 
 }
 
@@ -15,10 +16,20 @@
     clear: both;
 }
 
+
+
 input[type=text], select {
-    width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input, select {
+    padding: 12px 20px;
+    margin: 8px 8px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -26,7 +37,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 50%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -34,6 +45,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 input[type=submit]:hover {
@@ -47,9 +59,8 @@ input[type=submit]:hover {
 }
 
 #donateFormPanda{
-    width: 88%;
-    margin: 0 auto;
-    margin-top: 150px;
+  width: 88%;
+  margin: 25px 0 0 15px;
 }
 
 .myButton {
@@ -102,9 +113,7 @@ div.cta h1 {
    position: absolute;          
    top: 50%;                     
    transform: translate(0, -50%); 
-   padding: 0 15px 0 8px;
-   color: #fff;
-
+   padding-right: 15px; 
 }
 
 .text {
@@ -114,8 +123,8 @@ div.cta h1 {
  }
 
  .disclaimer {
-    font-style: italic;
-    color: #bbaaee;
+  font-style: italic;
+  color: #bbaaee;
  }
 
 * {
@@ -134,7 +143,7 @@ div.cta h1 {
 
 a {
    text-decoration: none;
-   color: white;
+   color: black;
 }
 
 a:hover {
@@ -150,15 +159,31 @@ nav {
 nav ul {
    /*background-color: rgba(0, 0, 0, 0.8);*/
    background-color: #048fa0 ;
-   height: 70px;
-   padding-top: 50px;
+   height: 30px;
+   padding-top: 10px;
+   text-align: left;
 }
 
 nav li {
    display: inline;
    float: left;
-   width: 33.333%;
-   text-align: center;
+   width: 15%;
+   text-align: left;
+}
+
+nav li.logo-panda {
+   display: inline;
+   float: left;
+   width: 10%;
+   text-align: left;
+}
+
+nav li.logo-panda h1 {
+   display: inline;
+   float: left;
+   width: 5%;
+   padding-left: 10px;
+   margin-top: -5px;
 }
 
 .img{
@@ -177,5 +202,12 @@ nav li {
 
 .fixed-block img{
  max-width: 80px;
+}
+
+.fixed-block a h1{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 50px;
 }
 
