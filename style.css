@@ -116,22 +116,22 @@ div.cta h1 {
    padding-right: 15px; 
 }
 
-.text {
-  -webkit-column-count: 2;
-  -moz-column-count: 2; 
-  column-count: 2;
- }
-
  .disclaimer {
  	font-style: italic;
  	color: #bbaaee;
  }
 
+ .text {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 28%; 
+  display: inline-block;
+}
+
 * {
    font-family: 'Roboto', sans-serif;
    margin: 0;
    padding: 0;
-   background-image: /images/panda2.jpg;
 }
 
 .container {
