@@ -1,3 +1,9 @@
+ * {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
 .text {
   -webkit-column-count: 2;
   -moz-column-count: 2; 
@@ -8,3 +14,45 @@
  	font-style: italic;
  	color: #bbaaee;
  }
+
+nav {
+   position: fixed;
+   left: 0;
+   width: 100%;
+}
+
+nav ul {
+   /*background-color: rgba(0, 0, 0, 0.8);*/
+   background-color: #048fa0 ;
+   height: 70px;
+   padding-top: 50px;
+}
+
+nav li {
+   display: inline;
+   float: left;
+   width: 33.333%;
+   text-align: center;
+}
+
+.img{
+   width: 100%;
+   max-height: 600px;
+      background-repeat: no-repeat;
+
+}
+
+.fixed-block {
+ position: fixed;
+ top: 30px;
+ left: 0;
+}
+
+
+.fixed-block img{
+ max-width: 80px;
+}
+
+.panda{
+ background-color: black;
+}
