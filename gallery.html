@@ -2,13 +2,16 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="gallery.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+  	<script type="text/javascript" src="javascript_gallery.js"></script>
   	<title>
   		Save the Panda
   	</title>
  	</head>
 	<body>
 
-			<div class="container">
+		<div class="container">
 		<!-- NAV -->
 		<nav>
 		<ul>
@@ -25,24 +28,22 @@
 		</a>
 	</div>
 
-
 		<div class="wrapper">
 
 				<div id="quote">
-					<h1 >"By protecting pandas, we're helping to safeguard the broader environment, which so many people and animals depend on."</h1>
+					<h1 >By protecting pandas, we're helping to safeguard the broader environment, which so many people and animals depend on.</h1>
 				</div>
 
-
 			<div class="image-row">
 				<ul>
 					<li>
-						<img src="images/gallery1.jpg">
+						<img src="images/gallery1_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail" >
 					</li>
 					<li>
-						<img src="images/gallery2.jpg">
+						<img src="images/gallery2_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 					<li>
-						<img src="images/gallery3.jpg">
+						<img src="images/gallery3_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 				</ul>
 			</div>
@@ -50,13 +51,13 @@
 			<div class="image-row">
 				<ul>
 					<li>
-						<img src="images/gallery4.jpg">
+						<img src="images/gallery4_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail" id="myImg" alt="1">
 					</li>
 					<li>
-						<img src="images/gallery5.jpg">
+						<img src="images/gallery5_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 					<li>
-						<img src="images/gallery6.jpg">
+						<img src="images/gallery6_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 				</ul>
 			</div>
@@ -64,19 +65,32 @@
 			<div class="image-row">
 				<ul>
 					<li>
-						<img src="images/gallery7.jpg">
+						<img src="images/gallery7_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 					<li>
-						<img src="images/gallery8.jpg">
+						<img src="images/gallery9_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 					<li>
-						<img src="images/gallery9.jpg">
+						<img src="images/gallery8_thumb.jpg" onclick="clickImage(this.src)" class="thumbnail">
 					</li>
 				
 				</ul>
 			</div>
 
 		</div>
+
+<!-- The Modal -->
+		<img id="myModal" class="modal">
+
+		  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
 
 	</body>
 </html>
