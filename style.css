@@ -17,7 +17,6 @@
 }
 
 
-
 input[type=text], select {
     padding: 12px 20px;
     margin: 8px 8px;
@@ -132,6 +131,7 @@ div.cta h1 {
    font-family: 'Roboto', sans-serif;
    margin: 0;
    padding: 0;
+   background-image: /images/panda2.jpg;
 }
 
 .container {
@@ -211,15 +211,3 @@ nav li.logo-panda h1 {
   left: 10px;
   font-size: 50px;
 }
-
-
-.text {
-  -webkit-column-count: 2;
-  -moz-column-count: 2; 
-  column-count: 2;
- }
-
- .disclaimer {
-  font-style: italic;
-  color: #bbaaee;
- }
