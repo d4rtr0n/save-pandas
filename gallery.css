@@ -19,14 +19,14 @@
 
 a {
    text-decoration: none;
-   color: white;
+   color: black;
 }
 
 a:hover {
    color: grey;
 }
 
-nav {
+/*nav {
    position: fixed;
    left: 0;
    width: 100%;
@@ -34,8 +34,8 @@ nav {
 }
 
 nav ul {
-   /*background-color: rgba(0, 0, 0, 0.8);*/
-   background-color: #048fa0 ;
+   background-color: rgba(0, 0, 0, 0.8);*/
+/*   background-color: #048fa0 ;
    height: 70px;
    padding-top: 50px;
 }
@@ -45,6 +45,42 @@ nav li {
    float: left;
    width: 33.333%;
    text-align: center;
+}*/
+
+nav {
+   position: fixed;
+   left: 0;
+   width: 100%;
+   z-index: 2000;
+}
+
+nav ul {
+   background-color: #048fa0 ;
+   height: 30px;
+   padding-top: 10px;
+   text-align: left;
+}
+
+nav li {
+   display: inline;
+   float: left;
+   width: 15%;
+   text-align: left;
+}
+
+nav li.logo-panda {
+   display: inline;
+   float: left;
+   width: 10%;
+   text-align: left;
+}
+
+nav li.logo-panda h1 {
+   display: inline;
+   float: left;
+   width: 5%;
+   padding-left: 10px;
+   margin-top: -5px;
 }
  
 
